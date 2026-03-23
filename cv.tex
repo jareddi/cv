@@ -82,7 +82,7 @@
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[style=authoryear,sorting=ynt, minbibnames=2, maxbibnames=2]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
@@ -142,12 +142,12 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Jacques Reddinger} \\[7.5pt]
+\href{https://github.com/jareddi}{\raisebox{-0.05\height}\faGithub\ jareddi} \ $|$ \ 
+\href{https://linkedin.com/in/jacques-a-reddinger}{\raisebox{-0.05\height}\faLinkedin\ jacques-a-reddinger} \ $|$ \ 
+\href{https://cas.uoregon.edu/directory/natural-sciences/all/jacquesr}{\raisebox{-0.05\height}\faGlobe \ University of Oregon} \ $|$ \ 
+\href{mailto:jacques@reddinger.org}{\raisebox{-0.05\height}\faEnvelope \ jacques@reddinger.org} \\
+% \href{tel:4433707163}{\raisebox{-0.05\height}\faMobile \ (443)370-7163} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -156,27 +156,32 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV can also be automatically compiled and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+PhD researcher specializing in Electron Microscopy and Condensed Matter Physics with expertise in magnetic-enabled electron microscopy and micromagnetic simulation paired with custom data analysis tools. Published in peer-reviewed journals, presented at national and international conferences, and recognized with awards for research and teaching excellence.
 
 %Experience
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
+\begin{jobshort}{Graduate Research Assistant}{Sept 2020 - present}
+\textit{McMorran Lab, Dept. of Physics, University of Oregon, Eugene, OR} \newline
+Conducted experimental and computational studies of magnetic textures in magnetic multilayer structures. Designed and carried out experiments using advanced electron microscopy techniques. Reinforced experimental results with computational techniques. Collaborated with labs at University of California San Diego’s Center for Memory and Recording Research and the National Center for Electron Microscopy at Lawrence Berkeley National Lab. Co-authored 2 peer review papers and presented at 5 international conferences. Performed regular physics outreach.
 \end{jobshort}
 
+\begin{jobshort}{Undergraduate Research Assistant}{May 2019 - Aug 2020}
+\textit{Koeth Lab, Dept. of Physics, University of Maryland, College Park, MD} \newline
+Designed and conducted an experiment studying decay via electron capture of Be-7 ions. Restored the Small Isochronous Ring (SIR), an ion storage ring, to a functioning condition. Designed and implemented various critical support systems including power control, vacuum, cooling, and structural support.
+\end{jobshort}
 
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
+\begin{jobshort}{Undergraduate Research Assistant}{May 2019 - Aug 2020}
+\textit{Belloni Lab, Dept. of Physics, University of Maryland, College Park, MD} \newline
+Assisted in the search for the W$\gamma$ decay of a charged Higgs boson by analyzing high-energy physics data using ROOT, Python, and C++.
+\end{jobshort}
   
 %Projects
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{Domain Tracker} & \hfill \href{https://github.com/jareddi/domain-tracker}{Link to github} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Custom python package for processing the output of micromagnetic simulation software. This tool harvests perpendicular magnetic domains and their properties from standard \texttt{.ovf} files. Domains are chronologically linked into \texttt{DomainChron} objects which store morphological, topological, and energetic properties. The information harvested and structured by this tool greatly assists in the analysis of simulation results.}  \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -184,31 +189,63 @@ long long line of blah blah that will wrap when the table fills the column width
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+2020 - present & PhD Physics at \textbf{University of Oregon} \hfill \normalsize (GPA: 3.96/4.0) \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+2016 - 2020 & BS Physics at \textbf{University of Maryland} \hfill (GPA: 3.84/4.0) \\ 
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
 \section{Publications}
-\begin{refsection}[citations.bib]
+\begin{refsection}[cv.bib]
 \nocite{*}
+\newrefcontext[sorting=ydnt] % set reverse-chronological order
 \printbibliography[heading=none]
 \end{refsection}
 
 %----------------------------------------------------------------------------------------
+%	Conference Presentations & Posters
+%----------------------------------------------------------------------------------------
+\section{Conference Presentations \& Posters}
+70th Annual Conference on Magnetism and Magnetic Materials, Palm Beach, FL, 31 October, 2025: "Soliton Formation and Topological Transitions during Stripe Collapse in Fe/Gd Multilayers"
+
+Microscopy and Microanalysis 2025, Salt Lake City, UT, 30 July, 2025: "Dual-Modal Depth Sensitive Real Space Magnetic Imaging of 3D Skyrmions in Multilayer Thin Films"
+
+16th Joint Conference on Magnetism and Magnetic Materials and Intermag, New Orleans, LA, 15 January, 2025: "Formation Process of Antiskyrmions in Fe/Gd Multilayers"
+
+68th Annual Conference on Magnetism and Magnetic Materials, Dallas, TX, 1 November, 2023: "3D Dipole Antiskyrmions in Fe/Gd Multilayers Consist of Bloch Lines without Singularities"
+
+%OMQ Fall Research Symposium 2023, Eugene, OR, September 11, 2023: ""
+
+Microscopy and Microanalysis 2022, Portland, OR, 2 August, 2022: "Micromagnetics Simulation as a Supplement to and Diagnostic for Lorentz Transmission Electron Microscopy"
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+\section{Awards}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2025 & Science Graduate Student Research Program Awardee, Department of Energy\\
+2025 & Microscopy and Microanalysis Student Scholar Award, Microanalysis Society \\
+
+2022 & Best Student Poster Award, Microscopy Society of America \\
+
+2022 & Weiser Physics Teaching Assistant Award, University of Oregon Dept. of Physics \\
+
+2016 - 2020 & President’s Scholarship, University of Maryland \\ 
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\section{Technical Proficiencies}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Electron Microscopy &  \normalsize{SEM, SEMPA, TEM, LTEM, STEM}\\
+Surface Analysis &  \normalsize{plasma cleaning, ion milling, Auger spectroscopy, XRD}\\
+Nanofabrication &  \normalsize{FIB, sputter deposition}\\
+Experimental Apparatus &  \normalsize{UHV, electron/ion optics and detectors, power and measurement electronics}\\
+Programming &  \normalsize{Python, Javascript, image analysis, computer vision}\\
+Simulation & \normalsize{MuMax3, custom Monte-Carlo simulations}
 \end{tabularx}
 
 \vfill
